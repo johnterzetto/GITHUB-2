@@ -6,6 +6,23 @@
 </head>
 
 <body>
+
+	<script>document.addEventListener('DOMContentLoaded', function () {
+  let count = 10;
+  const countdownElement = document.createElement('div');
+  countdownElement.id = 'countdown';
+  countdownElement.style.fontSize = '2em';
+  countdownElement.textContent = count;
+  document.body.appendChild(countdownElement);
+
+  const timer = setInterval(() => {
+    count--;
+    countdownElement.textContent = count;
+    if (count === 0) {
+      clearInterval(timer);
+    }
+  }, 1000);
+});</script>
 	<p>Hello there.</p>
 </body>
 </html>
