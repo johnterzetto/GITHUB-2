@@ -17,4 +17,3 @@
     TARGET: /public_html/
     # upload success execute command
     AFTER_COMMAND: # optional
-          
